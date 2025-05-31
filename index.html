@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hood Trap Remix Generator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Hood Trap Remix Generator</h1>
+    <p class="desc">Upload your song and a beat. We'll cook up a fire trap remix right in your browser.<br><span class="hint">No files leave your device!</span></p>
+    <form id="remix-form">
+      <div class="upload-group">
+        <label>
+          <span>Song (vocals or full track):</span>
+          <input type="file" id="song-input" accept="audio/*" required>
+        </label>
+        <label>
+          <span>Beat (trap/hood instrumental):</span>
+          <input type="file" id="beat-input" accept="audio/*" required>
+        </label>
+      </div>
+      <button id="remix-btn" type="submit">Generate Remix</button>
+    </form>
+    <div id="progress"></div>
+    <div id="result" class="hidden">
+      <h2>Your Hood Trap Remix</h2>
+      <audio id="remix-audio" controls></audio>
+      <a id="download-link" download="hoodtrap-remix.wav">Download Remix</a>
+    </div>
+    <footer>
+      <p>Made with <span style="color:#e83556;">&hearts;</span> | <a href="https://github.com/draxo3" target="_blank">draxo3</a></p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
